@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 SPECS:
 =====================================
 •Runs but below minimum specs: 80gb, 2.20ghz, 2gb ram
@@ -69,3 +70,6 @@ README en Español
 Peatio es un software libre y open-source para la implementación de una Exchange de divisas
 
 [README en Español](README-Español.md)
+=======
+# test
+>>>>>>> 4f8c7ca6c626c3b8f05fa9f38147bc6ffce24c77
