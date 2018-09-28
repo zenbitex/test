@@ -1,0 +1,36 @@
+#depths_wrapper.panel.panel-default
+  .panel-body.panel-body-head.section-title
+    table.table
+      thead: tr
+        th.col-xs-24.text-center
+          span.name = 'MARKET DEPTH'
+  .panel-body.panel-body-content
+    #depths
+
+javascript:
+  $('#depths').click(function(){
+
+    let bid = $('#depths svg .highcharts-markers path').attr('d');
+    console.log(bid);
+    if (bid.length>10 ){
+      console.log(55);
+      $('.depths_price').css("color","blue");
+      $('.depths_depth').css("color", "blue");
+    
+      $('#depths svg path.d').attr('fill', 'black');
+
+    }
+  });
+
+  $('#depths svg path').click(function(){
+    //  setInterval(function(){
+    let headPrice = $('.depth-head').html();
+    //console.log(headPrice + 4);
+    if ($('.depth-head').html() == "Bid") {
+      console.log(headPrice);
+      $('.depths_price').css("color","red");
+      $('.depths_depth').css("color", "red");
+    }
+  });
+  
+  

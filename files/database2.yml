@@ -1,0 +1,28 @@
+--- 
+development: 
+  adapter: mysql2
+  database: peatio_development
+  encoding: utf8
+  password: 
+  pool: 10
+  reconnect: true
+  username: root
+  host: 173.212.248.197
+production: 
+  adapter: mysql2
+  database: peatio_production
+  encoding: utf8
+  password: 
+  pool: 10
+  reconnect: true
+  username: root
+  host: 173.212.248.197
+test: 
+  adapter: mysql2
+  database: peatio_test
+  encoding: utf8
+  password: 
+  pool: 10
+  reconnect: true
+  username: root
+  host: 173.212.248.197

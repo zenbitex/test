@@ -1,0 +1,30 @@
+.row
+  .col-xs-12
+    .panel.panel-primary
+      .panel-heading
+        span = t('.withdraw', sn: @stellarcoin.id)
+      .panel-body
+        = description_for :withdraw do
+          = item_for @stellarcoin, :id
+          = item_for @stellarcoin, :created_at
+          = item_for @stellarcoin, :aasm_state_text
+          hr.split
+          = item_for @stellarcoin.member, :name
+          = item_for @stellarcoin, :fund_extra
+          = item_for @stellarcoin, :fund_uid do
+            span = @stellarcoin.fund_uid.truncate(22)
+          = item_for @stellarcoin, :amount
+          hr.split
+          = item_for @stellarcoin, :remark
+          hr.split
+          ul.list-inline.pull-right
+            - if @stellarcoin.may_reject?
+              li
+                = link_to t('.reject'), url_for([:admin, @stellarcoin]), class: 'btn btn-danger', method: 'DELETE', confirm: t('.reject_confirm')
+            - if @stellarcoin.may_process?
+              li
+                = link_to t('.process'), url_for([:admin, @stellarcoin]), class: 'btn btn-primary', method: 'PATCH'
+
+  .col-xs-12
+    = render partial: 'shared/admin/member', locals: {member: @stellarcoin.member}
+    = render partial: 'shared/admin/account', locals: {account: @stellarcoin.account}

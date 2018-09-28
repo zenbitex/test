@@ -1,0 +1,23 @@
+li.dropdown.hidden-xs
+  a.dropdown-toggle href="#" data-toggle="dropdown"
+    img src='#{language_path}'
+    b.caret
+  ul#languages.dropdown-menu
+    - I18n.available_locales.each do |lang|
+      li: a href="?lang=#{lang}": img src="/languages/#{lang || I18n.locale}.png"
+.languages-mobile.visible-xs
+  li 
+    - I18n.available_locales.each do |lang|
+      span: a.lang-a href="?lang=#{lang}": img.lang-img src="/languages/#{lang || I18n.locale}.png"
+
+
+javascript:
+  //  console.log($(".lang-a").attr("href"));
+  //  console.log (gon.local)
+  $(".lang-a").each( function(index, value) {
+    // console.log( $(this).attr("src"));  
+    if($(this).attr("href") == '?lang='+ gon.local) {
+      $(this).find("img").addClass( "active");
+    }   
+  })
+  

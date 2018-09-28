@@ -1,0 +1,32 @@
+#ticker.panel.panel-default
+  .panel-body.panel-body-head.section-title
+    table.table
+      thead: tr
+        th.col-xs-24.text-center
+          span.name = 'MARKET SNAPSHOT'
+  .panel-body
+    .bid.col-xs-7.pull-left
+      .hint = t('.bid')
+      .price
+    .last.col-xs-10
+      .price
+    .ask.col-xs-7.pull-right
+      .hint = t('.ask')
+      .price
+
+javascript:
+  
+  let priceChanged = $('.last .price');
+ 
+
+  $("body").on('DOMAttrModified', priceChanged, function() {  
+
+      var number = parseFloat($('.last .price').html());
+      console.log(number);
+      var toFixed = 8 - number.toString().split(".")[0].length;
+      var fixed = number.toFixed(toFixed);
+      $('.last .price').html(fixed);
+   
+  })
+
+

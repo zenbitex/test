@@ -1,0 +1,17 @@
+development: &defaults
+  adapter: mysql2
+  encoding: utf8
+  database: peatio_development
+  username: deploy
+  password: Ys6!ZCP!xG}P8W
+  pool: 10
+  reconnect: true
+  host: 94.237.85.18
+test:
+  <<: *defaults
+  database: peatio_test
+
+production:
+  <<: *defaults
+  database: peatio_production
+  host: 94.237.85.18

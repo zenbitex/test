@@ -1,0 +1,42 @@
+- id: btcltc
+  code: 3
+  #name: BTC/AUD      # default name
+  base_unit: btc
+  quote_unit: ltc
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0.1, currency: ltc, fixed: 8}
+  ask: {fee: 0.1, currency: btc, fixed: 8}
+  sort_order: 1
+  #visible: false     # default to true
+- id: btceth
+  code: 4
+  base_unit: btc
+  quote_unit: eth
+  bid: {fee: 0.1, currency: eth, fixed: 8}
+  ask: {fee: 0.1, currency: btc, fixed: 8}
+- id: btcxlm
+  code: 5
+  base_unit: btc
+  quote_unit: xlm
+  bid: {fee: 0.1, currency: xlm, fixed: 8}
+  ask: {fee: 0.1, currency: btc, fixed: 8}
+- id: ethltc
+  code: 6
+  base_unit: eth
+  quote_unit: ltc
+  bid: {fee: 0.1, currency: ltc, fixed: 8}
+  ask: {fee: 0.1, currency: eth, fixed: 8}
+- id: ethxlm
+  code: 7
+  base_unit: eth
+  quote_unit: xlm
+  bid: {fee: 0.1, currency: xlm, fixed: 8}
+  ask: {fee: 0.1, currency: eth, fixed: 8}
+- id: ltcxlm
+  code: 8
+  base_unit: ltc
+  quote_unit: xlm
+  bid: {fee: 0.1, currency: xlm, fixed: 8}
+  ask: {fee: 0.1, currency: ltc, fixed: 8}
+
+

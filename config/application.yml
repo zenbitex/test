@@ -1,0 +1,100 @@
+defaults: &defaults
+
+  # sites hosts
+  # session expire seconds
+  # admin role account
+  URL_HOST: 80.241.210.37
+  URL_SCHEMA: http
+  SESSION_EXPIRE: 60
+  ADMIN: 'a.terziev1415@gmail.com,other@devisd.com,admin@peatio.dev,admin@example.com,lilibabacheva@yahoo.com,lilibabacheva@gmail.com,galin.stef@abv.bg'
+  TIMEZONE: 'Beijing'
+
+  REDIS_URL: redis://127.0.0.1:6379
+
+  # below settings only in production env
+  # system notify mail settings
+  # --------------------------------------------------------------
+  #SMTP_PORT: YOUR_SMTP_PORT
+  #SMTP_DOMAIN: YOUR SMTP_DOMAIN
+  #SMTP_ADDRESS: YOUR_SMTP_ADDRESS
+  #SMTP_USERNAME: YOUR_SMTP_USERNAME
+  #SMTP_PASSWORD: YOUR_SMTP_PASSWORD
+  #SMTP_AUTHENTICATION: plain # could be plain, login or cram_md5
+
+#  SMTP_PORT: 587
+#  SMTP_DOMAIN: mg.dcfinex.com
+#  SMTP_ADDRESS: smtp.mailgun.org
+#  SMTP_USERNAME: postmaster@mg.dcfinex.com
+#  SMTP_PASSWORD: 7e5fcb931cc5002f0dc465ce267120e0-bdd08c82-4a030e86
+#  SMTP_AUTHENTICATION: plain # could be plain, login or cram_md5
+
+  # SUPPORT_MAIL: support@peatio.dev
+  # SYSTEM_MAIL_FROM: system@peatio.dev
+  # SYSTEM_MAIL_TO: group@peatio.dev
+  # OPERATE_MAIL_TO: support@peatio.dev
+
+  SUPPORT_MAIL: support@mg.dcfinex.com
+  SYSTEM_MAIL_FROM: system@mg.dcfinex.com
+  SYSTEM_MAIL_TO: group@mg.dcfinex.com
+  OPERATE_MAIL_TO: support@mg.dcfinex.com
+
+
+  # WebSocket Streaming API settings
+  # --------------------------------------------------------------
+  #WEBSOCKET_HOST: 
+  #WEBSOCKET_PORT: 8080
+  # Uncomment below to enable secure WebSocket (wss)
+  #WEBSOCKET_SSL_KEY: 'your_server.key'
+  #WEBSOCKET_SSL_CERT: 'your_server.crt'
+
+  # pusher settings
+  # --------------------------------------------------------------
+  # peatio dependence Pusher (http://pusher.com) service
+  # you can change your key for production environment.
+  # we support development key and secret
+  # uncomment below line only development or test
+  #
+  # PUSHER_APP: 510827
+  # PUSHER_KEY: 3ffe61f5f9f92edc0d89
+  # PUSHER_SECRET: 2d21fd4a1c9943521e65
+
+  PUSHER_APP: 1759327
+  PUSHER_KEY: 62ab1832
+  PUSHER_SECRET: 1c7be6e6
+
+  PUSHER_HOST: pusher.beaxchange.com
+  PUSHER_PORT: 8080
+  PUSHER_WS_PORT: 8080
+  PUSHER_WSS_PORT: 8443
+  PUSHER_ENCRYPTED: true
+
+  # twilio setting
+  # --------------------------------------------------------------
+  # https://github.com/twilio/twilio-ruby
+  #
+  TWILIO_NUMBER: YOUR_TWILIO_NUMBER
+  TWILIO_SID: YOUR_TWILIO_SID
+  TWILIO_TOKEN: YOUR_TWILIO_TOKEN
+
+
+  # Third party auth
+
+  # Weibo
+  # --------------------------------------------------------------
+#  WEIBO_AUTH: off # on/off
+#  WEIBO_KEY: 3820920586
+#  WEIBO_SECRET: 2d6174dc698e86860c75d75b1e8a01c8
+
+  # chat setting
+  # --------------------------------------------------------------
+  # Do you want chat feature in your exchange ?
+  # send mail to community@peatio.com
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

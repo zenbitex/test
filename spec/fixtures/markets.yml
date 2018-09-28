@@ -1,0 +1,16 @@
+- id: btcaud
+  code: 3
+  #name: BTC/AUD      # default name
+  base_unit: btc
+  quote_unit: aud
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0, currency: aud, fixed: 2}
+  ask: {fee: 0, currency: btc, fixed: 4}
+  sort_order: 1
+  #visible: false     # default to true
+- id: ltcaud
+  code: 4
+  base_unit: ltc
+  quote_unit: aud
+  bid: {fee: 0, currency: aud, fixed: 8}
+  ask: {fee: 0, currency: ltc, fixed: 8}
