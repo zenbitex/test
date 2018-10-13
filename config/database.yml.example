@@ -1,16 +1,18 @@
 development: &defaults
   adapter: mysql2
+    host: 178.128.210.57
+
   encoding: utf8
-  database: peatio_development
-  username: root
-  password:
+  database: peatio_development2
+  username: peatio
+  password: P3gajahan
   pool: 10
   reconnect: true
 
 test:
   <<: *defaults
-  database: peatio_test
+  database: peatio_test2
 
 production:
   <<: *defaults
-  database: peatio_production
+  database: peatio_production2
