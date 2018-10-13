@@ -3,7 +3,7 @@ defaults: &defaults
   # sites hosts
   # session expire seconds
   # admin role account
-  URL_HOST: dcfinex.com
+  URL_HOST: 178.128.221.20
   URL_SCHEMA: http
   SESSION_EXPIRE: 60
   ADMIN: 'admin@dcfinex.com'
