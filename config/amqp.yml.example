@@ -1,5 +1,5 @@
 connect:
-  host: 127.0.0.1
+  host: 178.128.85.68
   port: 5672
 
 exchange:
