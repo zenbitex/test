@@ -1,6 +1,0 @@
-- id: btcaud
-  code: 3
-  base_unit: btc
-  quote_unit: aud
-  bid: {fee: 0, currency: aud, fixed: 2}
-  ask: {fee: 0, currency: btc, fixed: 4}

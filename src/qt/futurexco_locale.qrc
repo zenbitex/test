@@ -1,0 +1,29 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/futurexco_bg.qm</file>
+        <file alias="ca">locale/futurexco_ca.qm</file>
+        <file alias="cs">locale/futurexco_cs.qm</file>
+        <file alias="da">locale/futurexco_da.qm</file>
+        <file alias="de">locale/futurexco_de.qm</file>
+        <file alias="en">locale/futurexco_en.qm</file>
+        <file alias="en_US">locale/futurexco_en_US.qm</file>
+        <file alias="es">locale/futurexco_es.qm</file>
+        <file alias="fi">locale/futurexco_fi.qm</file>
+        <file alias="fr_FR">locale/futurexco_fr_FR.qm</file>
+        <file alias="it">locale/futurexco_it.qm</file>
+        <file alias="ja">locale/futurexco_ja.qm</file>
+        <file alias="ko_KR">locale/futurexco_ko_KR.qm</file>
+        <file alias="nl">locale/futurexco_nl.qm</file>
+        <file alias="pl">locale/futurexco_pl.qm</file>
+        <file alias="pt">locale/futurexco_pt.qm</file>
+        <file alias="pt_BR">locale/futurexco_pt_BR.qm</file>
+        <file alias="ro_RO">locale/futurexco_ro_RO.qm</file>
+        <file alias="ru">locale/futurexco_ru.qm</file>
+        <file alias="sk">locale/futurexco_sk.qm</file>
+        <file alias="sv">locale/futurexco_sv.qm</file>
+        <file alias="tr">locale/futurexco_tr.qm</file>
+        <file alias="uk">locale/futurexco_uk.qm</file>
+        <file alias="zh_CN">locale/futurexco_zh_CN.qm</file>
+        <file alias="zh_TW">locale/futurexco_zh_TW.qm</file>
+    </qresource>
+</RCC>

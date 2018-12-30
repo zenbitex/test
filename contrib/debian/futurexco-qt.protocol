@@ -1,0 +1,11 @@
+[Protocol]
+exec=futurexco-qt '%u'
+protocol=futurexco
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

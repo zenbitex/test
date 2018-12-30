@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Futurexco
+Comment=Futurexco P2P Cryptocurrency
+Exec=futurexco-qt %u
+Terminal=false
+Type=Application
+Icon=futurexco128
+MimeType=x-scheme-handler/futurexco;
+Categories=Office;Finance;
+Name[ru]=futurexco-qt.desktop.desktop

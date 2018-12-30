@@ -1,0 +1,26 @@
+# /etc/conf.d/futurexcod: config file for /etc/init.d/futurexcod
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/futurexco/futurexco.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/futurexcod"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/futurexcod.pid"
+
+# Where to write futurexcod data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/futurexcod"
+
+# User and group to own futurexcod process
+#BITCOIND_USER="futurexco"
+#BITCOIND_GROUP="futurexco"
+
+# Path to futurexcod executable
+#BITCOIND_BIN="/usr/bin/futurexcod"
+
+# Nice value to run futurexcod under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""
